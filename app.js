@@ -14,7 +14,7 @@ app.use(body_parser.urlencoded({
 app.use(express.static("public"));
 
 
-mongoose.connect("mongodb+srv://ahong107:96117117@cluster0.8bdimyq.mongodb.net/wikiDB?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://<login>:<pass>@cluster0.8bdimyq.mongodb.net/wikiDB?retryWrites=true&w=majority")
 
 const articleSchema = {
     title: String,
